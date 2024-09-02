@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: Gestion_Magasin_Dev
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/magasin_dev
+    username: root
+    password: ""
+    driverClassName: com.mysql.cj.jdbc.Driver
+    hikari:
+      enabled: false
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: hamzahasnaoui08@gmail.com
+    password: "dtmq xdua rtvk mjtg"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8053
+
+logging:
+  level:
+    org:
+      mapstruct: DEBUG
+      springframework: info
+    com:
+      example: DEBUG
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /docs-ui
+  operationsSorter: method
