@@ -18,6 +18,8 @@ public class Paiement {
     private Long id;
     @ManyToOne
     private Achat  achat;
+    @ManyToOne
+    private Client client;
     private double montant;
     private LocalDate datePaiement;
 }

@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -29,6 +30,7 @@ public class Achat {
     private double montantTotal;
     private double montantPaye;
     private double soldeRestant;
+    private LocalDate dateAchat;
 
 
 }

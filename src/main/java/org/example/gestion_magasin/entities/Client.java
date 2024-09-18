@@ -22,4 +22,6 @@ public class Client {
     private String telephone;
     @OneToMany(mappedBy = "client")
     private List<Achat> achats;
+    @OneToMany(mappedBy = "client")
+    private List<Paiement> paiements;
 }
